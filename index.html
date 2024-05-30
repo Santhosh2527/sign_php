@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register</title>
+    <title>Document</title>
     <style>
         html {
             height: 100%;
@@ -22,6 +22,8 @@
         .main_container {
             width: 100%;
             height: 86%;
+            background: #c8c3c3;
+
         }
 
         .header {
@@ -51,73 +53,69 @@
             align-items: center;
         }
 
-        button#log {
-            width: 35%;
+        button#admin {
+            width: 50%;
             height: 35%;
             border-radius: 9px;
             border: none;
             background-color: #FFC107;
         }
 
-        .footer {
-            width: 100%;
-            height: 100%;
+        .profile {
+            align-items: center;
+            width: 12%;
             display: flex;
             justify-content: center;
-            flex-direction: column;
+            gap: 10px;
+        }
+
+        .main {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            /* justify-content: center; */
             align-items: center;
             background-color: #c8c3c3;
         }
 
-        .footer_content {
-            height: 15em;
+        .content_2 {
+            width: 90%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .button {
+        .footer {
             width: 100%;
-            height: 5em;
+            height: 20%;
+            background-color: #9f9592;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        button#regi {
-            width: 11%;
-            height: 50%;
-            background-color: #FFC107;
-            border: none;
-            border-radius: 10px;
-        }
-        
-        a {
-         text-decoration: none;
-         color: black;
         }
     </style>
 </head>
 
 <body>
+
     <div class="main_container">
         <div class="header">
             <div class="content">
                 <h1>HOGWARTS UNIVERSITY</h1>
             </div>
-            <div class="log_btn">
-               <button onclick="window.location.href='./login.php'" id="log">Login</button>
+            <div class="profile">
+                <button id="admin">ADMIN</button>
+                <img src="design.png" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="content_2">
+                <h1 id="courses">Welcome to our courses</h1>
             </div>
         </div>
         <div class="footer">
-            <div class="footer_content">
-                <p>Dear learns summer courses registration are open now. Please enrol if not already.</p>
-            </div>
-            <div class="button">
-                <button onclick="window.location.href='./view/register.php'" id="regi">Register Now</butto>
-            </div>
+            <p>© 2024 courses. All Rights Reserved.</p>
         </div>
-        <link rel="stylesheet" href="./login.php">
     </div>
 </body>
 
